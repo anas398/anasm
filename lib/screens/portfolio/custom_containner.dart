@@ -96,7 +96,7 @@ class CustomContainer extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Padding(
-              padding: const EdgeInsets.only(right: 25),
+              padding:  EdgeInsets.only(right: 25),
               child:private==true?Container(
                 width: 100,
                 height: 45,

@@ -22,17 +22,18 @@ class MInfo extends StatelessWidget {
           mini: true,
 
           backgroundColor: ksecondaryColor.withOpacity(.5),
-          shape: CircleBorder(),
+          shape: const CircleBorder(),
           child: Container(
-            decoration: BoxDecoration(shape: BoxShape.circle),
+            decoration: const BoxDecoration(shape: BoxShape.circle),
 
-            child: Center(child: Icon(Icons.arrow_upward_outlined,color: Colors.white,)),
+            child: const Center(child: Icon(Icons.arrow_upward_outlined,color: Colors.white,)),
           ),
           onPressed: () {
             controller.scrollTo(0, 0);
           }),
       backgroundColor: kbg2Color,
-      endDrawer: SafeArea(bottom: false,
+      endDrawer: SafeArea(
+        bottom: false,
         child: Container(
           child: Drawer(
             width: size.width / 2.5,
@@ -43,7 +44,7 @@ class MInfo extends StatelessWidget {
               child: Obx(() => ListView(
                 padding: EdgeInsets.zero,
                 children: [
-                  SizedBox(height: 25),
+                  const SizedBox(height: 25),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: Row(
@@ -79,7 +80,7 @@ class MInfo extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 50),
                   buildDrawerListTile('HOME', 0, context, () {
                     if (Keyholders.headerKey.currentContext != null) {
                       Scrollable.ensureVisible(
@@ -151,7 +152,7 @@ class MInfo extends StatelessWidget {
         height: size.height,
         child: SafeArea(bottom: false,
           child: CustomScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             controller: controller.scrollController,
             slivers: [
               SliverAppBar(
@@ -213,27 +214,39 @@ class MInfo extends StatelessWidget {
                       );
                     },
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                 ],
               ),
               SliverList(
                 delegate: SliverChildListDelegate(
                   [
-                    SizedBox(height: 30),
-                    MHeader(),
+                    const SizedBox(height: 30),
+                    const MHeader(),
 
 
 
 
-                    Container(
+                    SizedBox(
                       width: size.width,
                       height: 80,
                       child: Center(
-                        child: Text(
-                          "© 2024 All rights reserved ",
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(.8),
-                          ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "© 2024 All rights reserved",
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(.8),
+                              ),
+                            ),
+                            Text(
+                              "Designed by anas moozhikkal",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(.8),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),

@@ -57,7 +57,7 @@ class MPortfolio extends StatelessWidget {
           details: "Its cylinder distribution management system (ERP based application).meticulously crafted by Beams IT Solutions.",
           img: "assets/images/cyl.png",
         ),
-        SizedBox(
+        const SizedBox(
           height : 50,
         ),
         MCustomContainer(
@@ -88,7 +88,7 @@ class MPortfolio extends StatelessWidget {
           apple: () => Get.to(
             const WebviewScreen(
                 url:
-                    "https:urity.agromaster.com/"),
+                    "https://apps.apple.com/au/app/socialprotect/id1615521416"),
           ),
           heading: "Social Protect",
           details:
@@ -102,12 +102,12 @@ class MPortfolio extends StatelessWidget {
           apple: () => Get.to(
            const WebviewScreen(
                 url:
-                    "/biowin-aeo/biowin.agromaster/"),
+                    "https://apps.apple.com/au/app/tokenbritesi/id1763521416"),
           ),
           play: () => Get.to(
         const WebviewScreen(
                 url:
-                    "-aeo/biowin.agromaster/"),
+                    "https://play.google.com/store/apps/details?id=com.accubits.attention_block_business"),
           ),
           heading: "Attention Block",
           details:

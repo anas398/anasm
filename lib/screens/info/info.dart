@@ -79,6 +79,16 @@ class Info extends StatelessWidget {
                             cursor: '',
                             speed: const Duration(milliseconds: 80),
                           ),
+                          TypewriterAnimatedText(
+                            "MERN Stack Developer",
+                            textStyle: GoogleFonts.catamaran(
+                              color: ksecondaryColor,
+                              fontSize:tab?28: 36,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            cursor: '',
+                            speed: const Duration(milliseconds: 80),
+                          ),
                         ],
                         totalRepeatCount: 100,
                         pause: const Duration(milliseconds: 1000),

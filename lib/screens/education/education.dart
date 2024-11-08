@@ -95,7 +95,7 @@ class Education2 extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
-                          "assets/images/zoople.jpeg",
+                          "assets/images/zoople.png",
                           height: 45,
                         ),
                       ),
@@ -132,54 +132,56 @@ class Education2 extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 15),
-                            child: Text(
-                              "2015 - 2019",
-                              style: GoogleFonts.montserrat(
-                                  color: ksecondaryColor),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const SizedBox(
+                              height: 20,
                             ),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 15),
-                            child: Text(
-                              "APJ Abdul Kalam Technological University",
-                              style: GoogleFonts.montserrat(
-                                  color: Colors.grey.shade200,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w300),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 15),
+                              child: Text(
+                                "2015 - 2019",
+                                style: GoogleFonts.montserrat(
+                                    color: ksecondaryColor),
+                              ),
                             ),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 15),
-                            child: Text(
-                              "Bachelor of Technology in Computer Science & Engineering",
-                              style: GoogleFonts.montserrat(
-                                  color: Colors.grey.shade200,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w300),
+                            const SizedBox(
+                              height: 20,
                             ),
-                          )
-                        ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 15),
+                              child: Text(
+                                "APJ Abdul Kalam Technological University",
+                                style: GoogleFonts.montserrat(
+                                    color: Colors.grey.shade200,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 15),
+                              child: Text(
+                                "Bachelor of Technology in Computer Science & Engineering",
+                                style: GoogleFonts.montserrat(
+                                    color: Colors.grey.shade200,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
-                      const Spacer(),
+                      //const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/ktu.png",
-                          height: 45,
+                          height: 55,
                         ),
                       ),
                       const SizedBox(
@@ -256,8 +258,8 @@ class Education2 extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
-                          "assets/images/sc.jpeg",
-                          height: 45,
+                          "assets/images/sc.png",
+                          height: 55,
                         ),
                       ),
                       const SizedBox(

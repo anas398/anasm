@@ -12,7 +12,7 @@ class MEducation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
+    return SizedBox(
         width: size.width,
 
         height: 850,
@@ -27,26 +27,27 @@ class MEducation extends StatelessWidget {
                   fontSize: 28,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
                 width: size.width,
-                decoration: BoxDecoration(   color: Color(0xff333B50),borderRadius: BorderRadius.circular(5)),
+                decoration: BoxDecoration(   color: const Color(0xff333B50),borderRadius: BorderRadius.circular(5)),
                 height: 200,
-             
+
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Row(crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
 
                     children: [
-                      SizedBox(height: 20,),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                   //   const SizedBox(height: 20,),
+                      Column(crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 20,),
+                          const SizedBox(height: 20,),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Text(
@@ -54,30 +55,32 @@ class MEducation extends StatelessWidget {
                               style: GoogleFonts.montserrat(color: ksecondaryColor),
                             ),
                           ),
-                          SizedBox(height: 20,),
-                           Padding(
-                             padding: const EdgeInsets.symmetric(horizontal: 15),
-                             child: Text(
-                              "Zoople Technology\nand Training",
-                              style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:16,fontWeight:FontWeight.w300),
-                                                   ),
-                           ),
-                            SizedBox(height: 10,),
-                             Padding(
-                               padding: const EdgeInsets.symmetric(horizontal: 15),
-                               child: Text(
-                                 "Mobile Application Development",
-                                                       style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:12,fontWeight:FontWeight.w300),
-                                                     ),
-                             )
+                          const SizedBox(height: 20,),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: SizedBox(width: 150,
+                              child: Text(
+                                "Zoople Technology and Training",
+                                style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:15,fontWeight:FontWeight.w300),
+                                maxLines: 2,   ),
+                            ),
+                          ),
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Text(
+                              "Mobile Application Development",
+                              style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:12,fontWeight:FontWeight.w300),
+                            ),
+                          )
                         ],
                       ),
-                      // Spacer(),
+                      // const Spacer(),
                       Padding(
-                        padding: const EdgeInsets.only(top: 25),
-                        child: Image.asset("assets/images/zoople.jpeg",height: 25,),
+                        padding: const EdgeInsets.only(top: 25,right: 5),
+                        child: Image.asset("assets/images/zoople.png", height: 50,width: 90,),
                       ),
-                      SizedBox(width: 15,),
+                  //    const SizedBox(width: 15,),
                     ],
                   ),
                 ),
@@ -86,75 +89,71 @@ class MEducation extends StatelessWidget {
 
 
             //2nd
-             SizedBox(
+             const SizedBox(
               height: 25,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
                 width: size.width,
-                decoration: BoxDecoration(   color: Color(0xff333B50),borderRadius: BorderRadius.circular(5)),
+                decoration: BoxDecoration(   color: const Color(0xff333B50),borderRadius: BorderRadius.circular(5)),
                 height: 200,
-             
+
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Row(crossAxisAlignment: CrossAxisAlignment.start,
 
                     children: [
-                      SizedBox(height: 20,),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      const SizedBox(height: 20,),
+                      Column(crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 20,),
+                          const SizedBox(height: 20,),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Text(
-                              "2015-2019",
+                              "2015 - 2019",
                               style: GoogleFonts.montserrat(color: ksecondaryColor),
                             ),
                           ),
-                          SizedBox(height: 20,),
-                           Padding(
-                             padding: const EdgeInsets.symmetric(horizontal: 15),
-                             child: Container(width: 150,
-                               child: Text(
+                          const SizedBox(height: 20,),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: SizedBox(width: 150,
+                              child: Text(
                                 "APJ Abdul Kalam Technological University",
-                                style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:16,fontWeight:FontWeight.w300,)
-                                                   , maxLines: 3, ),
-                             ),
-                           ),
-                            SizedBox(height: 10,),
-                             Padding(
-                               padding: const EdgeInsets.symmetric(horizontal: 15),
-                               child: Text("Bachelor of Technology in\n ComputerScience & Engineering",
-                                                       overflow: TextOverflow.visible,
-                                                       style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:12,fontWeight:FontWeight.w300),
-                                                   ),
-                             )
+                                style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:15,fontWeight:FontWeight.w300),
+                                maxLines: 2,   ),
+                            ),
+                          ),
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Text(
+                              "Bachelor of Technology in\nComputer Science & Engineering",
+                              style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:12,fontWeight:FontWeight.w300),
+                            ),
+                          )
                         ],
                       ),
-                     // Spacer(),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 25),
-                          child: Image.asset("assets/images/ktu.png",height: 80,),
-                        ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 25),
+                        child: Image.asset("assets/images/ktu.png", height: 50,),
                       ),
-                      SizedBox(width: 15,),
+                      const SizedBox(width: 5,),
                     ],
                   ),
                 ),
               ),
             ),
-             SizedBox(
+             const SizedBox(
               height: 25,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
                 width: size.width,
-                decoration: BoxDecoration(   color: Color(0xff333B50),borderRadius: BorderRadius.circular(5)),
+                decoration: BoxDecoration(   color: const Color(0xff333B50),borderRadius: BorderRadius.circular(5)),
                 height: 200,
              
                 child: Padding(
@@ -162,10 +161,10 @@ class MEducation extends StatelessWidget {
                   child: Row(crossAxisAlignment: CrossAxisAlignment.start,
 
                     children: [
-                      SizedBox(height: 20,),
+                      const SizedBox(height: 20,),
                       Column(crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 20,),
+                          const SizedBox(height: 20,),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Text(
@@ -173,17 +172,17 @@ class MEducation extends StatelessWidget {
                               style: GoogleFonts.montserrat(color: ksecondaryColor),
                             ),
                           ),
-                          SizedBox(height: 20,),
+                          const SizedBox(height: 20,),
                            Padding(
                              padding: const EdgeInsets.symmetric(horizontal: 15),
-                             child: Container(width: 150,
+                             child: SizedBox(width: 150,
                                child: Text(
                                 "Higher Secondary Govt VHSS Pullanoor",
                                 style: GoogleFonts.montserrat(color: Colors.grey.shade200,fontSize:15,fontWeight:FontWeight.w300),
                                                   maxLines: 2,   ),
                              ),
                            ),
-                            SizedBox(height: 10,),
+                            const SizedBox(height: 10,),
                              Padding(
                                padding: const EdgeInsets.symmetric(horizontal: 15),
                                child: Text(
@@ -193,12 +192,12 @@ class MEducation extends StatelessWidget {
                              )
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
-                        child: Image.asset("assets/images/sc.jpeg", height: 50,),
+                        child: Image.asset("assets/images/sc.png", height: 50,),
                       ),
-                      SizedBox(width: 15,),
+                      const SizedBox(width: 5,),
                     ],
                   ),
                 ),

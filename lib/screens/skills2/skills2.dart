@@ -39,7 +39,7 @@ class Skills2 extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () => Get.to(const WebviewScreen(
-                url: "https://anasm-48501.web.app/assets/Anas_Flutter Developer.pdf")),
+                url: "https://anasm-48501.web.app/assets/Anas_Flutter_Developer.pdf")),
             child: Container(
               width: 200,
               height: 45,
@@ -288,6 +288,42 @@ class Skills2 extends StatelessWidget {
             child: Row(
               children: [
                 Text(
+                  "Adobe XD",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 400.05 ? 77 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+          const SizedBox(
+            height: 20,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Text(
                   "Bloc",
                   style: GoogleFonts.montserrat(color: Colors.grey.shade200),
                 ),
@@ -316,6 +352,45 @@ class Skills2 extends StatelessWidget {
                   ],
                 ),
               )),
+          const SizedBox(
+            height: 20,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Text(
+                  "MERN Stack",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 400.05 ? 59 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
           const SizedBox(
             height: 100,
           )

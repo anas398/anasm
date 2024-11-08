@@ -38,7 +38,7 @@ class Mskill extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () => Get.to(const WebviewScreen(
-                url:"https://anasm-48501.web.app/assets/Anas_Flutter Developer.pdf")),
+                url:"https://anasm-48501.web.app/assets/Anas_Flutter_Developer.pdf")),
             child: Container(  
               width: 200,
               height: 45,
@@ -318,6 +318,45 @@ class Mskill extends StatelessWidget {
                   ],
                 ),
               )),
+
+          const SizedBox(
+            height: 20,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Text(
+                  "Adobe XD",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 100.05 ? 77 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+
           const SizedBox(
             height: 20,
           ),
@@ -347,13 +386,49 @@ class Mskill extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 100.05 ? 45 : 0,
+                            homeController2.offsett.value >= 100.05 ? 75 : 0,
                         displayText: '%',
                       ),
                     ),
                   ],
                 ),
               )),
+          const SizedBox(
+            height: 20,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Text(
+                  "MERN Stack",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 100.05 ? 59 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
           const SizedBox(
             height: 100,
           )

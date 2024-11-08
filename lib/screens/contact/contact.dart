@@ -291,7 +291,7 @@ class Contact2 extends StatelessWidget {
                     InkWell(
                       onTap: () => Get.to(const WebviewScreen(
                           url:
-                              "https://api.whatsapp.com/send/?phone=919562015163&text&type=phone_number&app_absent=0")),
+                          "https://wa.me/+971507954506")),
                       child: Container(
                         width: 35,
                         height: 35,
@@ -307,7 +307,7 @@ class Contact2 extends StatelessWidget {
                     InkWell(
                       onTap: () => Get.to(const WebviewScreen(
                           url:
-                              "https://www.instagram.com/anz_mzkl/")),
+                              "https://www.instagram.com/anz_mzkl")),
                       child: Container(
                         width: 35,
                         height: 35,

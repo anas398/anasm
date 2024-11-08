@@ -310,7 +310,7 @@ class MContact2 extends StatelessWidget {
                       InkWell(
                         onTap: () => Get.to(const WebviewScreen(
                             url:
-                                "https://api.whatsapp.com/send/?phone={your contact number}&text&type=phone_number&app_absent=0")),
+                                "https://wa.me/+971507954506")),
                         child: Container(
                           width: 35,
                           height: 35,
@@ -326,7 +326,7 @@ class MContact2 extends StatelessWidget {
                       InkWell(
                         onTap: () => Get.to(const WebviewScreen(
                             url:
-                                "https://www.instagram.com/{your instagram id}/?igsh=cTdwcmYwNWZkOHdh&utm_source=qr")),
+                                "https://www.instagram.com/anz_mzkl")),
                         child: Container(
                           width: 35,
                           height: 35,
@@ -342,8 +342,8 @@ class MContact2 extends StatelessWidget {
                       InkWell(
                         onTap: () => Get.to(const WebviewScreen(
                             url:
-                                "https://www.linkedin.com/in/your linkedin/")),
-                        child: Container(
+                                "https://www.linkedin.com/in/anasmzk/")),
+                        child: SizedBox(
                           width: 35,
                           height: 35,
                           child: Image.asset(
@@ -357,7 +357,7 @@ class MContact2 extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () => Get.to(const WebviewScreen(
-                            url: "your github")),
+                            url: "https://github.com/anas398")),
                         child: Container(
                           width: 40,
                           height: 40,

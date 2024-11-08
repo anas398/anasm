@@ -60,7 +60,7 @@ class HeaderStack extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 40),
                           child: Text(
-                            "Professional Mobile App Developer with Over 4.5 years of experience, including 1.5 years of expertise in the UAE. Adept at building cross-platform mobile applications using Flutter and Dart, with a solid understanding of API integration, Firebase, and state management. Known for delivering high-quality, scalable solutions, and a strong focus on performance and user experience. Collaborative team player with a passion for innovation and continuous learning.",
+                            "Experienced and dedicated Flutter Developer with over 4 years in mobile app development, specializing in creating cross-platform, high-performance applications. Proficient in leveraging Flutter and Dart to deliver seamless, intuitive user experiences with pixel-perfect UIs and efficient API integration. Skilled in backend technologies, including Node.js, Express, and MongoDB, and actively expanding expertise in the MERN stack to enhance full-stack development capabilities. Known for strong problem-solving abilities, clear documentation, and effective collaboration in dynamic, team-oriented environments.",
                             style: TextStyle(
                                 color: Colors.grey.shade200, fontSize: 13),
                           ),

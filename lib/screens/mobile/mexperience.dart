@@ -90,11 +90,11 @@ class MExperience extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/exacore.png",
-                          height: 25,
+                          height: 55,
                         ),
                       ),
                       SizedBox(
-                        width: 15,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -169,11 +169,11 @@ class MExperience extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/beams.png",
-                          height: 25,
+                          height: 55,
                         ),
                       ),
                       SizedBox(
-                        width: 15,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -249,11 +249,11 @@ class MExperience extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/acc.png",
-                          height: 25,
+                          height: 55,
                         ),
                       ),
                       SizedBox(
-                        width: 15,
+                        width: 5,
                       ),
                     ],
                   ),

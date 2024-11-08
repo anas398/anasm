@@ -23,15 +23,14 @@ class Home2 extends StatelessWidget {
     return Scaffold(
       floatingActionButton: Padding(
         padding: const EdgeInsets.only(right: 30,bottom: 30),
-        child:size.width <= 852?SizedBox(): FloatingActionButton(
+        child:size.width <= 852? const SizedBox(): FloatingActionButton(
             mini: true,
-
             backgroundColor: ksecondaryColor.withOpacity(.5),
-            shape: CircleBorder(),
+            shape: const CircleBorder(),
             child: Container(
-              decoration: BoxDecoration(shape: BoxShape.circle),
+              decoration: const BoxDecoration(shape: BoxShape.circle),
 
-              child: Center(child: Icon(Icons.arrow_upward_outlined,color: Colors.white,)),
+              child: const Center(child: Icon(Icons.arrow_upward_outlined,color: Colors.white,)),
             ),
             onPressed: () {
               controller.scrollTo(0, 0);
@@ -46,7 +45,7 @@ class Home2 extends StatelessWidget {
         child: SafeArea(
           bottom: false,
           child: CustomScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             controller: controller.scrollController,
             slivers: [
               SliverAppBar(
@@ -60,8 +59,9 @@ class Home2 extends StatelessWidget {
                 expandedHeight: 80,
                 leadingWidth: 200,
                 leading: Padding(
-                  padding: EdgeInsets.only(left: 50, top: 5),
+                  padding: const EdgeInsets.only(left: 50, top: 5),
                   child: Container(
+
                     child: Row(
                       children: [
                         Container(
@@ -153,19 +153,20 @@ class Home2 extends StatelessWidget {
               SliverList(
                 delegate: SliverChildListDelegate(
                   [
-                    SizedBox(height: 100),
+                    const SizedBox(height: 100),
                     HeaderStack(),
-                    SizedBox(),
+                    const SizedBox(),
 
 
 
 
-                    Container(
+                    SizedBox(
+
                       width: size.width,
                       height: 80,
                       child: Center(
                           child: Text(
-                            "© 2024 All rights reserved ",
+                            "© 2024 - anas moozhikkal - All rights reserved",
                             style: TextStyle(
                                 color: Colors.white.withOpacity(.8)),
                           )),
