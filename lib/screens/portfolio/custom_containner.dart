@@ -8,6 +8,7 @@ class CustomContainer extends StatelessWidget {
   final String details;
   final String heading;
   final bool? private;
+
   final String img;
   final VoidCallback? play;
   final VoidCallback? apple;
@@ -16,14 +17,15 @@ class CustomContainer extends StatelessWidget {
     required this.details,
     required this.heading,
     required this.img,
-     this.play,
-     this.apple,
+    this.play,
+    this.apple,
     this.private,
   });
 
   @override
   Widget build(BuildContext context) {
     var tab = Responsive.isTablet(context);
+    var desktop = Responsive.isDesktop(context);
     Size size = MediaQuery.of(context).size;
 
     return Expanded(
@@ -32,7 +34,7 @@ class CustomContainer extends StatelessWidget {
           color: Color(0xff333B50),
           borderRadius: BorderRadius.circular(2),
         ),
-        height: 500,
+        height: desktop?600:tab? 530:500,
         child: Column(
           children: [
             Container(
@@ -111,7 +113,8 @@ class CustomContainer extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 ),
-              ): Row(
+              ):
+              Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   InkWell(
@@ -122,7 +125,7 @@ class CustomContainer extends StatelessWidget {
                       child: Image.asset("assets/images/play.png"),
                     ),
                   ),
-                  SizedBox(width: 20),
+                  const SizedBox(width: 20),
                   InkWell(
                     onTap: apple,
                     child: Container(

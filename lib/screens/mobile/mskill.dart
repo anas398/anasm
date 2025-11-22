@@ -38,7 +38,7 @@ class Mskill extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () => Get.to(const WebviewScreen(
-                url:"https://anasm-48501.web.app/assets/Anas_Flutter_Developer.pdf")),
+                url:"https://anasm-48501.web.app/assets/Anas_FlutterDeveloper.pdf")),
             child: Container(  
               width: 200,
               height: 45,
@@ -102,12 +102,134 @@ class Mskill extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Row(
               children: [
                 Text(
-                  "Getx",
+                  "MERN Stack",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 100.05 ? 75 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+          const SizedBox(
+            height: 20,
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Text(
+                  "MSSQL & MYSQL",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 100.05 ? 86 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+          const SizedBox(
+            height: 20,
+          ),
+
+
+
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Text(
+                  "Provider",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 100.05 ? 87 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+          const SizedBox(
+            height: 20,
+          ),
+
+
+
+
+
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Text(
+                  "GetX",
                   style: GoogleFonts.montserrat(color: Colors.grey.shade200),
                 ),
               ],
@@ -128,7 +250,7 @@ class Mskill extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 100.05 ? 92 : 0,
+                            homeController2.offsett.value >= 100.05 ? 89 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -138,6 +260,47 @@ class Mskill extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Text(
+                  "Agora",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 100.05 ? 84 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+          const SizedBox(
+            height: 20,
+          ),
+
+
+
+          //---
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -173,43 +336,8 @@ class Mskill extends StatelessWidget {
             ),
           )),
 
-          const SizedBox(
-            height: 20,
-          ),
 
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30),
-            child: Row(
-              children: [
-                Text(
-                  "Provider",
-                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Obx(() => Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: FAProgressBar(
-                        progressColor: ksecondaryColor.withOpacity(.6),
-                        borderRadius: BorderRadius.circular(0),
-                        size: 15,
-                        displayTextStyle:
-                            const TextStyle(fontSize: 10, color: Colors.white),
-                        currentValue:
-                            homeController2.offsett.value >= 100.05 ? 87 : 0,
-                        displayText: '%',
-                      ),
-                    ),
-                  ],
-                ),
-              )),
+
           const SizedBox(
             height: 20,
           ),
@@ -239,7 +367,7 @@ class Mskill extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 100.05 ? 89 : 0,
+                            homeController2.offsett.value >= 100.05 ? 92 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -275,7 +403,7 @@ class Mskill extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 100.05 ? 85 : 0,
+                            homeController2.offsett.value >= 100.05 ? 88 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -311,7 +439,7 @@ class Mskill extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 100.05 ? 65 : 0,
+                            homeController2.offsett.value >= 100.05 ? 68 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -386,7 +514,7 @@ class Mskill extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 100.05 ? 75 : 0,
+                            homeController2.offsett.value >= 100.05 ? 72 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -401,7 +529,7 @@ class Mskill extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                  "MERN Stack",
+                  "Riverpod",
                   style: GoogleFonts.montserrat(color: Colors.grey.shade200),
                 ),
               ],
@@ -422,7 +550,7 @@ class Mskill extends StatelessWidget {
                     displayTextStyle:
                     const TextStyle(fontSize: 10, color: Colors.white),
                     currentValue:
-                    homeController2.offsett.value >= 100.05 ? 59 : 0,
+                    homeController2.offsett.value >= 100.05 ? 66 : 0,
                     displayText: '%',
                   ),
                 ),

@@ -12,7 +12,7 @@ import '../../helper/color.dart';
 class WebviewScreen extends StatefulWidget {
   final String url;
 
-  const WebviewScreen({Key? key, required this.url}) : super(key: key);
+  const WebviewScreen({Key? key, required this.url,  }) : super(key: key);
 
   @override
   _WebviewScreenState createState() => _WebviewScreenState();

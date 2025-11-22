@@ -166,7 +166,7 @@ class Home2 extends StatelessWidget {
                       height: 80,
                       child: Center(
                           child: Text(
-                            "© 2024 - anas moozhikkal - All rights reserved",
+                            "© 2025 - anas moozhikkal - All rights reserved",
                             style: TextStyle(
                                 color: Colors.white.withOpacity(.8)),
                           )),

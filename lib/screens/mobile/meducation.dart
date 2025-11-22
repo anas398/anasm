@@ -78,7 +78,7 @@ class MEducation extends StatelessWidget {
                       // const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25,right: 5),
-                        child: Image.asset("assets/images/zoople.png", height: 50,width: 90,),
+                        child: Image.asset("assets/images/zoople.png", height: 60,width: 90,),
                       ),
                   //    const SizedBox(width: 15,),
                     ],
@@ -138,7 +138,7 @@ class MEducation extends StatelessWidget {
                       const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
-                        child: Image.asset("assets/images/ktu.png", height: 50,),
+                        child: Image.asset("assets/images/ktu.png", height: 80,),
                       ),
                       const SizedBox(width: 5,),
                     ],
@@ -195,7 +195,7 @@ class MEducation extends StatelessWidget {
                       const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
-                        child: Image.asset("assets/images/sc.png", height: 50,),
+                        child: Image.asset("assets/images/sc.png", height: 60,),
                       ),
                       const SizedBox(width: 5,),
                     ],

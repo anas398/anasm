@@ -22,7 +22,7 @@ class MExperience extends StatelessWidget {
                   fontSize: 28,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Padding(
@@ -30,7 +30,7 @@ class MExperience extends StatelessWidget {
               child: Container(
                 width: size.width,
                 decoration: BoxDecoration(
-                    color: Color(0xff333B50),
+                    color: const Color(0xff333B50),
                     borderRadius: BorderRadius.circular(5)),
                 height: 200,
                 child: Padding(
@@ -38,24 +38,103 @@ class MExperience extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Text(
-                              "Jul 2024 - Oct 2024",
+                              "May 2025 - Present",
                               style: GoogleFonts.montserrat(
                                   color: ksecondaryColor),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Container(width:150,
+                              child: Text(
+                                "Bait Al Tarfeeh Toys Tr.",
+                                style: GoogleFonts.montserrat(
+                                    color: Colors.grey.shade200,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w300,),maxLines: 2,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Text(
+                              "Mobile App Developer",
+                              style: GoogleFonts.montserrat(
+                                  color: Colors.grey.shade200,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w300),
+                            ),
+                          )
+                        ],
+                      ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 25),
+                        child: Image.asset(
+                          "assets/images/bait.jpeg",
+                          height: 85,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Container(
+                width: size.width,
+                decoration: BoxDecoration(
+                    color: const Color(0xff333B50),
+                    borderRadius: BorderRadius.circular(5)),
+                height: 200,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Text(
+                              "Jul 2024 - Feb 2025",
+                              style: GoogleFonts.montserrat(
+                                  color: ksecondaryColor),
+                            ),
+                          ),
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
@@ -64,13 +143,13 @@ class MExperience extends StatelessWidget {
                               child: Text(
                                 "Exacore IT Solutions",
                                 style: GoogleFonts.montserrat(
-                                    color: Colors.grey.shade200,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w300,),maxLines: 2,
+                                  color: Colors.grey.shade200,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w300,),maxLines: 2,
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Padding(
@@ -85,15 +164,15 @@ class MExperience extends StatelessWidget {
                           )
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/exacore.png",
-                          height: 55,
+                          height: 85,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                     ],
@@ -102,8 +181,9 @@ class MExperience extends StatelessWidget {
               ),
             ),
 
+//--------
             //2nd
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Padding(
@@ -111,7 +191,7 @@ class MExperience extends StatelessWidget {
               child: Container(
                 width: size.width,
                 decoration: BoxDecoration(
-                    color: Color(0xff333B50),
+                    color: const Color(0xff333B50),
                     borderRadius: BorderRadius.circular(5)),
                 height: 200,
                 child: Padding(
@@ -119,13 +199,13 @@ class MExperience extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
@@ -136,7 +216,7 @@ class MExperience extends StatelessWidget {
                                   color: ksecondaryColor),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
@@ -149,7 +229,7 @@ class MExperience extends StatelessWidget {
                                   fontWeight: FontWeight.w300),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Padding(
@@ -164,15 +244,15 @@ class MExperience extends StatelessWidget {
                           )
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/beams.png",
-                          height: 55,
+                          height: 85,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                     ],
@@ -180,7 +260,7 @@ class MExperience extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Padding(
@@ -188,7 +268,7 @@ class MExperience extends StatelessWidget {
               child: Container(
                 width: size.width,
                 decoration: BoxDecoration(
-                    color: Color(0xff333B50),
+                    color: const Color(0xff333B50),
                     borderRadius: BorderRadius.circular(5)),
                 height: 200,
                 child: Padding(
@@ -196,13 +276,13 @@ class MExperience extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
@@ -213,46 +293,45 @@ class MExperience extends StatelessWidget {
                                   color: ksecondaryColor),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
-                            child: Text(
-                              "Accubits Technologies Pvt Ltd",
-                              style: GoogleFonts.montserrat(
+                            child: Container(width:150,
+                              child: Text(
+                                "Accubits Technologies Pvt Ltd",
+                                style: GoogleFonts.montserrat(
                                   color: Colors.grey.shade200,
                                   fontSize: 16,
-                                  fontWeight: FontWeight.w300),
+                                  fontWeight: FontWeight.w300,),maxLines: 2,
+                              ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
-                            child: Container(width: 150,
-                              child: Text(
-                                "Flutter Developer",
-                                style: GoogleFonts.montserrat(
-                                    color: Colors.grey.shade200,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w300),
-                                    maxLines: 2,
-                              ),
+                            child: Text(
+                              "Mobile App Developer",
+                              style: GoogleFonts.montserrat(
+                                  color: Colors.grey.shade200,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w300),
                             ),
                           )
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/acc.png",
-                          height: 55,
+                          height: 85,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                     ],

@@ -234,7 +234,7 @@ class MInfo extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "© 2024 All rights reserved",
+                              "© 2025 All rights reserved",
                               style: TextStyle(
                                 color: Colors.white.withOpacity(.8),
                               ),

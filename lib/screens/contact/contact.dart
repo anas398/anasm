@@ -20,12 +20,14 @@ class Contact2 extends StatelessWidget {
   final subjectController = TextEditingController();
 
   sendEmail() async {
+    print("www>>>>>");
     try {
       final url = Uri.parse("https://api.emailjs.com/api/v1.0/email/send");
+      print("www> ${url}>>>>");
       final response = await http.post(url,
           headers: {'Content-Type': 'application/json'},
           body: json.encode({
-            "service_id": "service_5wflphj",
+            "service_id": "service_8rfh3bs",
             "template_id": "template_iifu9qe",
             "user_id": "eoC2hL_1KsU31Au9r",
             "template_params": {
@@ -36,12 +38,12 @@ class Contact2 extends StatelessWidget {
               "phone":phoneController.text
             }
           }));
-      print(response.body);
+      print("sdsd5446>> ${response.body}");
       if (response.statusCode == 200 && emailController.text.isEmpty || nameController.text.isEmpty || msgController.text.isEmpty) {
-   
+
       }
       else if(response.statusCode ==200){
-             Get.snackbar("Thank you for connecting", "", colorText: Colors.white);
+        Get.snackbar("Thank you for connecting", "", colorText: Colors.white);
       }else{
         return null;
       }
@@ -50,6 +52,7 @@ class Contact2 extends StatelessWidget {
 
       return response.statusCode;
     } catch (e) {
+      print("sdfsf>>>>> ${e.toString()}");
       throw Exception(e);
     }
   }

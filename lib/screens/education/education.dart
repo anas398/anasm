@@ -181,7 +181,7 @@ class Education2 extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/ktu.png",
-                          height: 55,
+                          height: 85,
                         ),
                       ),
                       const SizedBox(
@@ -259,7 +259,7 @@ class Education2 extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 25),
                         child: Image.asset(
                           "assets/images/sc.png",
-                          height: 55,
+                          height: 65,
                         ),
                       ),
                       const SizedBox(

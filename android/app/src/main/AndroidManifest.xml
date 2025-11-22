@@ -4,7 +4,7 @@
 
 
     <application
-        android:label="anasm"
+        android:label="AM"
         android:name="${applicationName}"
         android:usesCleartextTraffic="true"
         android:enableOnBackInvokedCallback="true"

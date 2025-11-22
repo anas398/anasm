@@ -39,7 +39,7 @@ class Skills2 extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () => Get.to(const WebviewScreen(
-                url: "https://anasm-48501.web.app/assets/Anas_Flutter_Developer.pdf")),
+                url: "https://anasm-48501.web.app/assets/Anas_FlutterDeveloper.pdf")),
             child: Container(
               width: 200,
               height: 45,
@@ -93,7 +93,7 @@ class Skills2 extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 400.05 ? 90 : 0,
+                            homeController2.offsett.value >= 400.05 ? 95 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -103,12 +103,141 @@ class Skills2 extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Row(
               children: [
                 Text(
-                  "Getx",
+                  "MERN Stack",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 400.05 ? 75 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+
+
+          const SizedBox(
+            height: 20,
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Text(
+                  "MSSQL & MYSQL",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 400.05 ? 86 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+
+          const SizedBox(
+            height: 20,
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Text(
+                  "Provider",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 400.05 ? 87 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+          const SizedBox(
+            height: 20,
+          ),
+
+
+
+
+
+
+
+
+
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Text(
+                  "GetX",
                   style: GoogleFonts.montserrat(color: Colors.grey.shade200),
                 ),
               ],
@@ -139,6 +268,46 @@ class Skills2 extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Text(
+                  "Agora",
+                  style: GoogleFonts.montserrat(color: Colors.grey.shade200),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Obx(() => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FAProgressBar(
+                    progressColor: ksecondaryColor.withOpacity(.6),
+                    borderRadius: BorderRadius.circular(0),
+                    size: 15,
+                    displayTextStyle:
+                    const TextStyle(fontSize: 10, color: Colors.white),
+                    currentValue:
+                    homeController2.offsett.value >= 400.05 ? 84 : 0,
+                    displayText: '%',
+                  ),
+                ),
+              ],
+            ),
+          )),
+
+          //--
+
+          const SizedBox(
+            height: 20,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Row(
@@ -165,7 +334,7 @@ class Skills2 extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 400.05 ? 82 : 0,
+                            homeController2.offsett.value >= 400.05 ? 90 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -201,7 +370,7 @@ class Skills2 extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 400.05 ? 86 : 0,
+                            homeController2.offsett.value >= 400.05 ? 92 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -345,7 +514,7 @@ class Skills2 extends StatelessWidget {
                         displayTextStyle:
                             const TextStyle(fontSize: 10, color: Colors.white),
                         currentValue:
-                            homeController2.offsett.value >= 400.05 ? 35 : 0,
+                            homeController2.offsett.value >= 400.05 ? 72 : 0,
                         displayText: '%',
                       ),
                     ),
@@ -355,15 +524,13 @@ class Skills2 extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const SizedBox(
-            height: 20,
-          ),
+
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Row(
               children: [
                 Text(
-                  "MERN Stack",
+                  "Riverpod",
                   style: GoogleFonts.montserrat(color: Colors.grey.shade200),
                 ),
               ],
@@ -384,13 +551,18 @@ class Skills2 extends StatelessWidget {
                     displayTextStyle:
                     const TextStyle(fontSize: 10, color: Colors.white),
                     currentValue:
-                    homeController2.offsett.value >= 400.05 ? 59 : 0,
+                    homeController2.offsett.value >= 400.05 ? 66 : 0,
                     displayText: '%',
                   ),
                 ),
               ],
             ),
           )),
+
+          const SizedBox(
+            height: 20,
+          ),
+
           const SizedBox(
             height: 100,
           )
